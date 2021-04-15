@@ -5,6 +5,6 @@ class SecretsController < ApplicationController
 
   private
   def require_login
-    redirect_to login_path unless session.include? :name
+    redirect_to '/' unless session.include? :name                   # '/' is the login route for the tests in this lab; the login route iS NOT '/login'
   end
 end
