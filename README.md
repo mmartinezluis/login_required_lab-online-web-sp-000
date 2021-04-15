@@ -1,3 +1,15 @@
+<h1>Hi, <%= current_user %></h1>
+
+<%= link_to "Secret Page", secret_path %>
+
+
+<%= form_tag logout_path do %>
+  <%= submit_tag "Logout" %>
+<% end %>
+
+
+
+
 # Login Required Lab
 
 ## Objectives
